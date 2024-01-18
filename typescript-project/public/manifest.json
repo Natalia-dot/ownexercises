@@ -1,0 +1,9 @@
+{
+  "short_name": "TS project",
+  "name": "My ts project",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "rgb(206, 242, 230)",
+  "background_color": "rgb(206, 242, 230)"
+}
