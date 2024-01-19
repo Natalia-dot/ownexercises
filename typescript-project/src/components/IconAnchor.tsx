@@ -13,12 +13,17 @@ interface IconAnchorProps
 }
 
 const IconAnchorStyled = styled.a<IconAnchorProps>`
-  height: ${(props) => (props.height ? props.height : "6vh")};
-  width: ${(props) => (props.width ? props.width : "6vh")};
+  height: ${(props) => (props.height ? props.height : "50px")};
+  width: ${(props) => (props.width ? props.width : "50px" )};
+  background: ${(props) => (props.id === 'github' && 'radial-gradient(circle, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%)')};
 
+  
   img {
-    height: ${(props) => (props.height ? props.height : "6vh")};
-    width: ${(props) => (props.width ? props.width : "6vh")};
+    overflow: hidden;
+    object-fit: contain;
+    transform: ${(props) => (props.id === 'github' && 'scale(1.2)')};
+    height: 100%;
+    width: 100%;
   }
 `;
 
