@@ -29,7 +29,7 @@ const IconAnchorStyled = styled.a<IconAnchorProps>`
 
 export const IconAnchor = (props: IconAnchorProps) => {
   return (
-    <IconAnchorStyled {...props}>
+    <IconAnchorStyled {...props} target="_blank">
       <img src={props.src} alt={props.alt} />
     </IconAnchorStyled>
   );
