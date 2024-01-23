@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 
 
 //aqui hacemos los tipos de los props que le van a entrar al Button. Lo que hacemos con el extends es darle todos los metodos posibles de Button
@@ -21,6 +21,7 @@ export const StyledButton = styled.button<{ variant?: string; text?: string}>` /
 //necesariamente los tipos que van a entrar a Button. Luego podemos redeclararlos en el StyledButton tambien o directamente indicarle a 
 // StyledButton que ButtonProps son los tipos que va a coger, asi no tenemos que estar actualizandolo constantemente, sino solo en un lugar
 export const Button = (props: ButtonProps ) => {
+
     return (
         <StyledButton {...props}/>
     )

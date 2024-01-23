@@ -24,6 +24,7 @@ const StyledFooter = styled.footer<FooterProps>`
 `;
 
 export const Footer = (props: FooterProps) => {
+  
   return (
     <StyledFooter {...props}>
       <IconAnchor href="https://www.linkedin.com/in/natalia-durante-09000a293/"
