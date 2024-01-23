@@ -1,15 +1,15 @@
-import { Outlet, RouterProvider } from 'react-router-dom';
-import './App.css';
+import { Outlet } from 'react-router-dom';
 import {Footer, Nav} from './components/index'
-import { router } from './routes/routes';
+
 
 const App: React.FC = () => {
+
+  
   return (
    <>
-
-  <Nav theme='dark'/>
+  <Nav/>
   <Outlet/>
-  <Footer theme='dark'/>
+  <Footer/>
    </>
   );
 }
