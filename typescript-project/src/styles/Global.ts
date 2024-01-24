@@ -18,4 +18,6 @@ min-height: 100vh;
 body {
   width: 100vw;
   min-height: 100vh;
+  background-color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.text};
 }`

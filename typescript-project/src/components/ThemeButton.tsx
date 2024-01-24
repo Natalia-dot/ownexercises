@@ -24,15 +24,13 @@ const buttonColors = {
 
 
 export const ThemeContainer = styled.div`
-  background-color: hsl(0, 0%, 100%);
-  display: flex;
+  display: flex;  background-color: ${({ theme }) => theme.colors.background};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+  border-top: 1px solid ${({ theme }) => theme.colors.border};
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid hsl(0, 0%, 87%);
-
-
 `;
 
 interface ThemeButtonProps
@@ -47,14 +45,14 @@ const ThemeButtonStyled = styled.button<ThemeButtonProps>`
   margin: 0 5px;
   padding: 10px;
   font-size: 0.5rem;
-  border: 1px solid hsl(0, 0%, 87%);
+  border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: 5px;
   background-color: ${(props) => props.$myTheme && buttonColors[props.$myTheme]};
   width: 20px;
   height: 20px;
   cursor: pointer;
   &:hover {
-    box-shadow: 2px 2px 2px hsl(0, 0%, 87%);
+    box-shadow: 2px 2px 2px ${({ theme }) => theme.colors.border};
   }
   &.active{
     border: 3px solid black;
@@ -71,8 +69,7 @@ const ThemeButtonStyled = styled.button<ThemeButtonProps>`
     --ex en la implementacion del boton, y aqui. */
 
 export const ThemeButton = (props: ThemeButtonProps) => {
-console.log(props.className);
-
+ 
 return (
 <ThemeButtonStyled {...props}/>
     ) 

@@ -7,13 +7,11 @@ interface NavProps
     React.HTMLAttributes<HTMLElement>,
     HTMLElement
   > {
-  theme?: "light" | "dark";
 }
 
 export const StyledNav = styled.nav<NavProps>`
-  background-color: ${(props) =>
-    props.theme === "light" ? "#b29d9d" : "#393333"};
-  color: ${(props) => (props.theme === "light" ? "#393333" : "#b29d9d")};
+   background-color: ${({ theme }) => theme.colors.background};
+   color: ${({ theme }) => theme.colors.text};
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -22,12 +20,12 @@ export const StyledNav = styled.nav<NavProps>`
   justify-content: space-around;
 
   a {
-    background-color: #b29d9d;
+    background-color: ${({ theme }) => theme.colors.secondaryBackground};
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #393333;
+    color: ${({ theme }) => theme.colors.text};
     width: 10vw;
     padding: 1rem 2rem;
     border-radius: 25px;
@@ -36,10 +34,10 @@ export const StyledNav = styled.nav<NavProps>`
   }
 
   a:hover {
-    transform: scale(1.1);
-    -webkit-box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.58);
-    -moz-box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.58);
-    box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.58);
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.40);
+    -moz-box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.40);
+    box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, 0.400);
   }
 `;
 

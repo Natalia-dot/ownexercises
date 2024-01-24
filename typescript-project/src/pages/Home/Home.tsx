@@ -5,11 +5,11 @@ export const Home = () => {
   return (
     <ThemeContainer>
       <ThemeButton $myTheme='light' />
-      <ThemeButton $myTheme='dark' className='active'/>
+      <ThemeButton $myTheme='dark'/>
       <ThemeButton $myTheme='blue'/>
       <ThemeButton $myTheme='green'/>
       <ThemeButton $myTheme='brown'/>
-      <ThemeButton $myTheme='pink'/>
+      <ThemeButton $myTheme='pink' className='active'/>
     </ThemeContainer>
   )
 }

@@ -5,7 +5,6 @@ interface FooterProps
     React.HTMLAttributes<HTMLElement>,
     HTMLElement
   > {
-  theme?: "light" | "dark";
 }
 
 const StyledFooter = styled.footer<FooterProps>`
@@ -15,9 +14,8 @@ const StyledFooter = styled.footer<FooterProps>`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) =>
-    props.theme === "light" ? "#b29d9d" : "#393333"};
-  color: ${(props) => (props.theme === "light" ? "#393333" : "#b29d9d")};
+  background-color: ${({ theme }) => theme.colors.secondaryBackground};
+  color: ${({ theme }) => theme.colors.text};
   position: fixed;
   bottom: 0;
   gap: 10px;
