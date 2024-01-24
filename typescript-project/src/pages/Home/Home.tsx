@@ -4,11 +4,12 @@ import { ThemeButton, ThemeContainer } from '../../components/ThemeButton'
 export const Home = () => {
   return (
     <ThemeContainer>
-      <ThemeButton className='blue active'/>
-      <ThemeButton className='green'/>
-      <ThemeButton className='black'/>
-      <ThemeButton className='white'/>
-      <ThemeButton className='pink'/>
+      <ThemeButton $myTheme='light' />
+      <ThemeButton $myTheme='dark' className='active'/>
+      <ThemeButton $myTheme='blue'/>
+      <ThemeButton $myTheme='green'/>
+      <ThemeButton $myTheme='brown'/>
+      <ThemeButton $myTheme='pink'/>
     </ThemeContainer>
   )
 }
