@@ -27,6 +27,7 @@ export const ThemeContainer = styled.div`
   display: flex;  background-color: ${({ theme }) => theme.colors.background};
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   border-top: 1px solid ${({ theme }) => theme.colors.border};
+  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -71,6 +72,6 @@ const ThemeButtonStyled = styled.button<ThemeButtonProps>`
 export const ThemeButton = (props: ThemeButtonProps) => {
  
 return (
-<ThemeButtonStyled {...props}/>
+<ThemeButtonStyled {...props} />
     ) 
 }
