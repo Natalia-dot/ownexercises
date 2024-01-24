@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={green}>
+    <ThemeProvider theme={dark}>
       <GlobalStyles />
       <RouterProvider router={router} />
     </ThemeProvider>

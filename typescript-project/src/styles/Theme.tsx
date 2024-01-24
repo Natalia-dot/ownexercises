@@ -1,22 +1,22 @@
 export const light = {
     name: "light-theme",
     colors: {
-      background: "rgb(237, 224, 212)",
-      secondaryBackground: "#",
-      text: "#",
-      border: "#",
-      accent: "#"
+      background: "#f1faee",
+      secondaryBackground: "#8d99ae",
+      text: "#111111",
+      border: "#343434",
+      accent: "#669bbc"
     },
   };
   
   export const dark = {
     name: "dark-theme",
     colors: {
-      background: "#",
-      secondaryBackground: "#",
-      text: "#",
-      border: "#",
-      accent: "#"
+      background: "#111111",
+      secondaryBackground: "#343434",
+      text: "#f1faee",
+      border: "#8d99ae",
+      accent: "#7c162e"
     },
   };
   
