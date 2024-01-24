@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Footer, Nav } from "./components/index";
 import { ThemeProvider } from "styled-components";
-import { light, dark, blue, green, brown, pink } from "./styles/Theme";
+import { light} from "./styles/Theme";
 import { GlobalStyles } from "./styles/Global";
 import { useState } from "react";
 

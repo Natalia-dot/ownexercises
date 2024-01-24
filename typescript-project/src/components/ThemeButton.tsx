@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 
 
 
@@ -70,8 +70,9 @@ const ThemeButtonStyled = styled.button<ThemeButtonProps>`
     --ex en la implementacion del boton, y aqui. */
 
 export const ThemeButton = (props: ThemeButtonProps) => {
+  const theme = useTheme();
  
 return (
-<ThemeButtonStyled {...props} />
+<ThemeButtonStyled {...props} className={theme.name.includes(props.$myTheme) ? 'active' : undefined}/>
     ) 
 }

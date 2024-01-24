@@ -1,8 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import styled, { ThemeContext, useTheme } from "styled-components";
 import { ThemeButton, ThemeContainer } from "./ThemeButton";
 import { light, dark, blue, green, brown, pink } from "../styles/Theme";
+
+
+  /*EX he pasado desde el componente app el setState de cambiar el tema, para poder meterlo en el onClick
+  --EX de los botones manualmente. Quiza se pueda hacer con un map y un object.keys para convertirlo en un solo 
+  --EX elemento, una sola linea de codigo
+  */
+//TODO Ver si puedo hacer los botones en una sola linea de codigo
 
 
 interface NavProps
@@ -83,3 +90,4 @@ export const Nav = (props: NavProps) => {
     </StyledNav>
   );
 };
+
