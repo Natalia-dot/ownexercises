@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import styled, { ThemeContext, useTheme } from "styled-components";
 import { ThemeButton, ThemeContainer } from "./ThemeButton";
@@ -71,6 +71,28 @@ export const StyledNav = styled.nav<NavProps>`
 `;
 
 export const Nav = (props: NavProps) => {
+  //ex esta es la opcion para que cambie el tema. Set theme es una funcion declarada en app para
+  //ex que tenga scope global. Tambien cambia el localstorage para que si se recarga la pagina
+  //ex se mantenga el theme.
+  const handleThemeChange = (theme:any) => {
+    localStorage.setItem("current-theme", JSON.stringify(theme))
+    props.$setTheme(theme);
+  }
+//FIX fix all the typescript roundabouts
+
+  useEffect(() => {
+    //ex este use effect lo usamos para que en el primer renderizado de la aplicacion busque si hay un tema.
+    //ex si no lo tiene, mete un null en string; esto es porque typescript da un error si le da null en vez de string,
+    //ex asi que de momento lo convierto a string, aunque hay que arreglarlo.
+    //ex Si currentTheme existe y no es null, setteamos el estado al tema que se encuentra en el localstorage
+    const currentTheme: any = JSON.parse(
+      localStorage.getItem("current-theme") ?? "null"
+    );
+    if (currentTheme && currentTheme !== "null") {
+      props.$setTheme(currentTheme);
+    }
+  }, []);
+
   return (
     <StyledNav {...props}>
       <div className='container1'>
@@ -80,12 +102,12 @@ export const Nav = (props: NavProps) => {
       <NavLink to="/media">Media</NavLink>
       </div>
       <ThemeContainer>
-      <ThemeButton onClick={() => props.$setTheme(light)} $myTheme='light' />
-      <ThemeButton onClick={() => props.$setTheme(dark)} $myTheme='dark'/>
-      <ThemeButton onClick={() => props.$setTheme(blue)} $myTheme='blue'/>
-      <ThemeButton onClick={() => props.$setTheme(green)} $myTheme='green'/>
-      <ThemeButton onClick={() => props.$setTheme(brown)} $myTheme='brown'/>
-      <ThemeButton onClick={() => props.$setTheme(pink)} $myTheme='pink'/>
+      <ThemeButton onClick={() => handleThemeChange(light)} $myTheme='light' />
+      <ThemeButton onClick={() => handleThemeChange(dark)} $myTheme='dark'/>
+      <ThemeButton onClick={() => handleThemeChange(blue)} $myTheme='blue'/>
+      <ThemeButton onClick={() => handleThemeChange(green)} $myTheme='green'/>
+      <ThemeButton onClick={() => handleThemeChange(brown)} $myTheme='brown'/>
+      <ThemeButton onClick={() => handleThemeChange(pink)} $myTheme='pink'/>
     </ThemeContainer>
     </StyledNav>
   );
