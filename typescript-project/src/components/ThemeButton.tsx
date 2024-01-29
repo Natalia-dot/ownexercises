@@ -56,7 +56,7 @@ const ThemeButtonStyled = styled.button<ThemeButtonProps>`
     box-shadow: 2px 2px 2px ${({ theme }) => theme.colors.border};
   }
   &.active{
-    border: 3px solid black;
+    border: 3px solid ${({ theme }) => theme.colors.text};
 }
 `;
 

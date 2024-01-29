@@ -47,7 +47,7 @@ export const light = {
     colors: {
       background: "rgb(237, 224, 212)",
       secondaryBackground: "rgb(221, 184, 146)",
-      text: "rgb(127, 85, 57)",
+      text: "rgb(76,51,34)",
       border: "rgb(176, 137, 104)",
       accent: "rgb(204, 213, 174)"
     },
