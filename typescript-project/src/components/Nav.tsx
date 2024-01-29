@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import styled, { ThemeContext, useTheme } from "styled-components";
 import { ThemeButton, ThemeContainer } from "./ThemeButton";
 import { light, dark, blue, green, brown, pink } from "../styles/Theme";
+import { NavProps } from "../props/props";
+import { StyledNav } from "./styles/index";
 
 
   /*EX he pasado desde el componente app el setState de cambiar el tema, para poder meterlo en el onClick
@@ -12,63 +13,6 @@ import { light, dark, blue, green, brown, pink } from "../styles/Theme";
 //TODO Ver si puedo hacer los botones en una sola linea de codigo
 
 
-interface NavProps
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLElement>,
-    HTMLElement
-  > {
-    $setTheme: React.Dispatch<React.SetStateAction<{
-      name: string;
-      colors: {
-          background: string;
-          secondaryBackground: string;
-          text: string;
-          border: string;
-          accent: string;
-      };
-  }>>
-}
-
-export const StyledNav = styled.nav<NavProps>`
-   background-color: ${({ theme }) => theme.colors.background};
-   color: ${({ theme }) => theme.colors.text};
-  width: 100vw;
-  height: 13vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-
-  a {
-    background-color: ${({ theme }) => theme.colors.secondaryBackground};
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: ${({ theme }) => theme.colors.text};
-    width: 10vw;
-    padding: 1rem 2rem;
-    border-radius: 25px;
-    transition: transform 0.3s ease-in-out;
-    transition: box-shadow 0.15s ease-in-out;
-  }
-
-  .container1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  a:hover {
-    transform: scale(1.05);
-    -webkit-box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.40);
-    -moz-box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.40);
-    box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, 0.400);
-  }
-`;
 
 export const Nav = (props: NavProps) => {
   //ex esta es la opcion para que cambie el tema. Set theme es una funcion declarada en app para
