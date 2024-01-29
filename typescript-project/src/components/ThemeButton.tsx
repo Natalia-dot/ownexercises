@@ -1,8 +1,5 @@
 import styled, { useTheme } from "styled-components";
 
-
-
-
 interface buttonColorsType {
 'light': string,
 'dark': string,
@@ -28,6 +25,7 @@ export const ThemeContainer = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   border-top: 1px solid ${({ theme }) => theme.colors.border};
   width: 100%;
+  height: 7vh;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;

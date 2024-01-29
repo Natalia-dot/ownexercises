@@ -17,7 +17,9 @@ const App: React.FC = () => {
     <ThemeProvider theme={selectedTheme}>
     <GlobalStyles />
         <Nav $setTheme={setSelectedTheme}/>
+        <main>
         <Outlet />
+        </main>
         <Footer />
         </ThemeProvider>
     </>

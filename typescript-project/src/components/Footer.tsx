@@ -1,25 +1,7 @@
-import styled from "styled-components";
 import { IconAnchor } from "./IconAnchor";
-interface FooterProps
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLElement>,
-    HTMLElement
-  > {
-}
+import { FooterProps } from "../props/props";
+import { StyledFooter } from "./styles/Footer/StyFooter";
 
-const StyledFooter = styled.footer<FooterProps>`
-  width: 100vw;
-  height: 8vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: ${({ theme }) => theme.colors.secondaryBackground};
-  color: ${({ theme }) => theme.colors.text};
-  position: fixed;
-  bottom: 0;
-  gap: 10px;
-`;
 
 export const Footer = (props: FooterProps) => {
   
@@ -30,7 +12,7 @@ export const Footer = (props: FooterProps) => {
         alt="Natalia's linkedin page"
       />
             <IconAnchor href="https://github.com/Natalia-dot?tab=repositories" id="github"
-        src="https://res.cloudinary.com/drbssyzr7/image/upload/v1705621207/Portfolio/githubblack_lvmmog.png"
+        src="https://res.cloudinary.com/drbssyzr7/image/upload/v1706545069/Portfolio/githubblack_lvmmog_c_crop_w_440_h_440_ar_1_1_pkakii.png"
         alt="Natalia's github page"
       />
     </StyledFooter>

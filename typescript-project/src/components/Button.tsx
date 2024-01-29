@@ -1,5 +1,6 @@
 import styled, { useTheme } from "styled-components";
-
+//X esto esta asi para poder ver el transcurso de mi aprendizaje de ts, saber como empece y mi proceso
+//X de pensamiento
 
 //aqui hacemos los tipos de los props que le van a entrar al Button. Lo que hacemos con el extends es darle todos los metodos posibles de Button
 //intrinsecos del Button de react (como el onClick o lo que sea). Y  luego especificamos los props que pueden servirnos para ahora mismo los estilos

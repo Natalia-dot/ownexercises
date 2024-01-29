@@ -1,11 +1,11 @@
 export const light = {
     name: "light-theme",
     colors: {
-      background: "#f1faee",
-      secondaryBackground: "#8d99ae",
-      text: "#111111",
-      border: "#343434",
-      accent: "#669bbc"
+      background: "		#fff8f8",
+      secondaryBackground: "#c6ccce",
+      text: "#121d42",
+      border: "	#4a4a4a",
+      accent: "		#1c666e"
     },
   };
   
