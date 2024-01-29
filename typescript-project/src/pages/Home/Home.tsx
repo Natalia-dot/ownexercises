@@ -1,10 +1,11 @@
 import React from 'react'
-import { Carrousel } from '../../components'
+import { ImgCarrousel } from '../../components'
+
 
 export const Home = () => {
   return (
 <>
-<Carrousel/>
+<ImgCarrousel/>
 </>
   )
 }

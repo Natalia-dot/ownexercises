@@ -13,7 +13,6 @@ export const StyledFooter = styled.footer<FooterProps>`
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.secondaryBackground};
   color: ${({ theme }) => theme.colors.text};
-  position: fixed;
   bottom: 0;
   gap: 10px;
 
