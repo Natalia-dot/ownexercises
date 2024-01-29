@@ -7,7 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     variant?: 'primary' | 'secondary';
     text?: string;
 }
-
+//does 
 export const StyledButton = styled.button<{ variant?: string; text?: string}>` // <----- esto se puede cambiar por ButtonProps!! Es lo mismo
     background-color: ${(props) => props.variant === "primary" ? 'blue' : 'red'}; 
     //aqui estamos cogiendo los props y usando el .variant, que es lo que nos concierne para este en concreto, igual
