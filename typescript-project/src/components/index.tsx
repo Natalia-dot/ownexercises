@@ -1,3 +1,6 @@
 export * from './Button'
 export * from './Nav'
 export * from './Footer'
+export * from './Carrousel'
+export * from './IconAnchor'
+export * from './ThemeButton'
