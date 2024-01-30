@@ -1,11 +1,13 @@
 import React from 'react'
-import { ImgCarrousel } from '../../components'
+import { FlexDiv } from '../../components'
 
 
 export const Home = () => {
   return (
 <>
-<ImgCarrousel/>
+<FlexDiv>
+  <p>Holaaa me llamo yo</p>
+</FlexDiv>
 </>
   )
 }

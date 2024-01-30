@@ -2,25 +2,25 @@ export interface FooterProps
   extends React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLElement>,
     HTMLElement
-  > {
-}
-
+  > {}
 
 export interface NavProps
   extends React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLElement>,
     HTMLElement
   > {
-    $setTheme: React.Dispatch<React.SetStateAction<{
+  $setTheme: React.Dispatch<
+    React.SetStateAction<{
       name: string;
       colors: {
-          background: string;
-          secondaryBackground: string;
-          text: string;
-          border: string;
-          accent: string;
+        background: string;
+        secondaryBackground: string;
+        text: string;
+        border: string;
+        accent: string;
       };
-  }>>
+    }>
+  >;
 }
 
 export interface IconAnchorProps
@@ -33,3 +33,12 @@ export interface IconAnchorProps
   width?: string;
   height?: string;
 }
+
+export interface FlexDivProps
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+  > {
+    w?: string;
+    h?: string;
+  }
