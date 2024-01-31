@@ -42,3 +42,11 @@ export interface FlexDivProps
     w?: string;
     h?: string;
   }
+
+  export interface FullScreenDivProps
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+  > {
+
+  }

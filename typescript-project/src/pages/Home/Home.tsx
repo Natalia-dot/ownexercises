@@ -1,13 +1,16 @@
 import React from 'react'
 import { FlexDiv } from '../../components'
+import { FullScreenDiv } from '../../components/styles/Main/FullScreenDiv'
 
 
 export const Home = () => {
   return (
 <>
+<FullScreenDiv>
 <FlexDiv>
-  <p>Holaaa me llamo yo</p>
+  
 </FlexDiv>
+</FullScreenDiv>
 </>
   )
 }

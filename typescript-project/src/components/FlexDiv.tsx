@@ -8,7 +8,7 @@ const StyledFlexDiv = styled.div<FlexDivProps>`
     justify-content: center;
     width: ${(props) => props.w ? props.w : '90vw'};
     height: ${(props) => props.h ? props.h : '30vh'};
-    background-color: blue;
+    background: rgba(0, 0, 0, 30%);
 `
 
 export const FlexDiv = (props: FlexDivProps) => {
