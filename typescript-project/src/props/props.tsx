@@ -39,8 +39,8 @@ export interface FlexDivProps
     React.HTMLAttributes<HTMLDivElement>,
     HTMLDivElement
   > {
-    w?: string;
-    h?: string;
+    $w?: string;
+    $h?: string;
   }
 
   export interface FullScreenDivProps

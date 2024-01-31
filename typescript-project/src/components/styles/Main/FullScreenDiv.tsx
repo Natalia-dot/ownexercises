@@ -8,7 +8,6 @@ const StyledFullSCreenDiv = styled.div<FullScreenDivProps>`
     justify-content: center;
     width: 100vw;
     min-height: 76vh;
-    background-color: blue;
 `
 
 export const FullScreenDiv = (props: FullScreenDivProps) => {
