@@ -9,7 +9,7 @@ export const Home = () => {
 <>
 <FullScreenDiv>
 {introduction.map((item) => (
-  <FlexDiv $w='40vw' $h='20vh'>
+  <FlexDiv $w='40vw' $h='30vh' $justify='left' $align='start'>
   {item.title}
   {item.text}
   {item.extra && item.extra}

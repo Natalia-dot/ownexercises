@@ -15,6 +15,8 @@ export interface NavProps
       colors: {
         background: string;
         secondaryBackground: string;
+        backgroundLight: string;
+        backgroundDark: string;
         text: string;
         border: string;
         accent: string;
@@ -41,6 +43,8 @@ export interface FlexDivProps
   > {
     $w?: string;
     $h?: string;
+    $align?: string;
+    $justify?: string
   }
 
   export interface FullScreenDivProps
@@ -49,4 +53,9 @@ export interface FlexDivProps
     HTMLDivElement
   > {
 
+  }
+
+  export interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+  {
+    
   }
