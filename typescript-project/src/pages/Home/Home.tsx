@@ -13,6 +13,7 @@ export const Home = () => {
   {item.title}
   {item.text}
   {item.extra && item.extra}
+  {item.img}
   </FlexDiv>
 
 ))}

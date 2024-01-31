@@ -5,12 +5,16 @@ const StyledFlexDiv = styled.div<FlexDivProps>`
     display: flex;
     flex-direction: column;
     align-items: ${(props) => props.$align ? props.$align : 'center'};
-    justify-content: ${(props) => props.$justify ? props.$justify : 'center'};;
+    justify-content: ${(props) => props.$justify ? props.$justify : 'center'};
     width: ${(props) => props.$w ? props.$w : '90vw'};
-    height: ${(props) => props.$h ? props.$h : '30vh'};
     background: rgba(0, 0, 0, 30%);
     margin: 3rem;
     padding: 2rem;
+
+    img{
+        width: calc( ${(props) => props.$w ? `${parseInt(props.$w) - 10}vw`: '90%'});
+        margin: 2rem;
+    }
 `
 
 export const FlexDiv = (props: FlexDivProps) => {
