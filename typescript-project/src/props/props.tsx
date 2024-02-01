@@ -44,7 +44,8 @@ export interface FlexDivProps
     $w?: string;
     $h?: string;
     $align?: string;
-    $justify?: string
+    $justify?: string;
+    $small?: boolean
   }
 
   export interface FullScreenDivProps

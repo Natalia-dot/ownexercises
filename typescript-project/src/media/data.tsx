@@ -30,3 +30,25 @@ export const introduction = [
     img: <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png'/>
   },
 ];
+
+
+
+export const workPageInfo = {
+  main: <>
+  <h2>My work</h2>
+  <p>Hi. I am a full-stack developer, with proficiency mainly in the <em>MERN</em> stack but still learning
+  new technologies. I have also worked in projects under the AGILE methodology, which provides a lead when
+  in a team. I am native in Spanish and have an almost native level in English, also being able to communicate
+  in French.</p>
+  </>,
+  technologies: <>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/800px-CSS.3.svg.png"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" />
+  <img src="https://www.styled-components.com/atom.png" />
+  <img src="https://coursera-university-assets.s3.amazonaws.com/05/353594a7964fdeaff4e10615de58c0/MongoDBSquareLogo.png" />
+  </>,
+  projects: <><p>hii</p></>
+}

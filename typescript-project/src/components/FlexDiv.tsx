@@ -12,7 +12,7 @@ const StyledFlexDiv = styled.div<FlexDivProps>`
     padding: 2rem;
 
     img{
-        width: calc( ${(props) => props.$w ? `${parseInt(props.$w) - 10}vw`: '90%'});
+        width: calc( ${(props) => props.$small ? '10vw' : props.$w ? `${parseInt(props.$w) - 20}vw`: '90%'});
         margin: 2rem;
     }
 `
