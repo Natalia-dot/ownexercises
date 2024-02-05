@@ -1,9 +1,11 @@
 import React from 'react'
-import { FlexDiv } from '../../../FlexDiv'
+import { FlexDiv } from './FlexDiv'
 
-export const WorkCard = (item:any) => {
+
+export const WorkCard = (prop:any) => {
+  const item = prop.item
   return (
-    <FlexDiv $w='40vw' $h='30vh' $justify='left' $align='start'>
+    <FlexDiv $w='60vw' $medium $justify='left' $align='start'>
   {item.title}
   {item.text}
   {item.extra && <div className='centeredContainer'>{item.extra}</div>}

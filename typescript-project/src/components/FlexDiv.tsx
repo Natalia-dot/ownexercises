@@ -7,12 +7,13 @@ const StyledFlexDiv = styled.div<FlexDivProps>`
     align-items: ${(props) => props.$align ? props.$align : 'center'};
     justify-content: ${(props) => props.$justify ? props.$justify : 'center'};
     width: ${(props) => props.$w ? props.$w : '90vw'};
-    background: rgba(0, 0, 0, 30%);
+    height: ${(props) => props.$h && props.$h};
+    background: ${({theme}) => theme.colors.secondaryBackground};
     margin: 1rem;
     padding: 0 2rem;
 
     img{
-        width: calc( ${(props) => props.$small ? '10vw' : props.$w ? `${parseInt(props.$w) - 20}vw`: '90%'});
+        width: calc( ${(props) => props.$small ? '10vw' : props.$medium ? '25vw' : props.$w ? `${parseInt(props.$w) - 20}vw`: '90%'});
         margin:1rem 0 2rem 0;
     }
 
