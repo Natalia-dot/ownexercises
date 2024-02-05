@@ -27,4 +27,5 @@ body {
   min-height: 100vh;
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text};
+
 }`

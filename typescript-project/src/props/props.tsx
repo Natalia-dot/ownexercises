@@ -45,7 +45,8 @@ export interface FlexDivProps
     $h?: string;
     $align?: string;
     $justify?: string;
-    $small?: boolean
+    $small?: boolean;
+    $row?: boolean;
   }
 
   export interface FullScreenDivProps
@@ -58,5 +59,12 @@ export interface FlexDivProps
 
   export interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
   {
-    
+    $nav?: string;
   }
+
+  export interface WorkCardProps extends React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+> {
+  
+}

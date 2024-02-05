@@ -1,3 +1,4 @@
+import { Link, useNavigate } from "react-router-dom";
 import { StyledButton } from "../components";
 import { GeneralButton } from "../components/styles";
 
@@ -22,7 +23,7 @@ export const introduction = [
     title: <h3>What I do</h3>,
     text: <p>I am aiming to become a fully-fledged full-stack developer as of now. I'd say I learn at a rapid pace, and not only that, but I am <em>eager</em> to learn. Nothing feels unreachable, since I know and am well aware that all things take time and effort, and so I deem nothing impossible to learn (which I think is a perk on its own). I have the most projects in Javascript ES6, but I also developed projects with an array of technologies.</p>,
     img: <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png'/>,
-    extra: <GeneralButton>My technologies</GeneralButton>
+    extra: <GeneralButton $nav='/work'>My technologies</GeneralButton>
   },  
   {
     title: <h3>Where I come from</h3>,

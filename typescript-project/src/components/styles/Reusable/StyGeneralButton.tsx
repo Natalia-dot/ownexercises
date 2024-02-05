@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ButtonProps } from "../../../props/props";
+import { useNavigate } from "react-router-dom";
 
 const StyGeneralButton = styled.button<ButtonProps>`
   width: 6rem;
@@ -14,5 +15,6 @@ const StyGeneralButton = styled.button<ButtonProps>`
 `;
 
 export const GeneralButton = (props: ButtonProps) => {
-  return <StyGeneralButton {...props} />;
+  const navigate = useNavigate();
+  return <StyGeneralButton onClick={() => props.$nav && navigate(props.$nav)}{...props} />;
 };

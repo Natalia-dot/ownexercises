@@ -8,15 +8,12 @@ export const Home = () => {
   return (
 <>
 <FullScreenDiv>
-{introduction.map((item) => (
-  <FlexDiv $w='40vw' $h='30vh' $justify='left' $align='start'>
-  {item.title}
-  {item.text}
-  {item.extra && item.extra}
-  {item.img}
-  </FlexDiv>
-
-))}
+<FlexDiv $row>
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  
+</FlexDiv>
 </FullScreenDiv>
 </>
   )
