@@ -45,6 +45,7 @@ export interface FlexDivProps
     $h?: string;
     $align?: string;
     $justify?: string;
+    $wrap?: string;
     $small?: boolean;
     $medium?: boolean;
     $row?: boolean;

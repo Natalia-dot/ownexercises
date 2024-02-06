@@ -11,10 +11,11 @@ const StyledFlexDiv = styled.div<FlexDivProps>`
     background: ${({theme}) => theme.colors.secondaryBackground};
     margin: 1rem;
     padding: 0 2rem;
-
-    img{
-        width: calc( ${(props) => props.$small ? '10vw' : props.$medium ? '25vw' : props.$w ? `${parseInt(props.$w) - 20}vw`: '90%'});
-        margin:1rem 0 2rem 0;
+    flex-wrap: ${(props) => props.$wrap && props.$wrap};
+    img {
+        width: ${(props) => (props.$small ? '10vw' : props.$medium ? '25vw' : props.$w ? `${parseInt(props.$w) - 20}vw` : '90%')};
+        margin:  ${(props) => props.$row ? '1rem 2rem' : '1rem 0 2rem 0'};
+        max-width: 100%; 
     }
 
     p {
@@ -30,7 +31,10 @@ const StyledFlexDiv = styled.div<FlexDivProps>`
     margin: 0;
     }
 
-    h3 {
+
+    h3,
+    h1,
+    h2 {
         margin: 1.5rem 0 0 0;
     }
 `

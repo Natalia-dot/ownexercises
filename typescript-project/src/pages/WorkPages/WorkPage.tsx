@@ -7,7 +7,7 @@ export const WorkPage = () => {
   return (
     <>
       <FullScreenDiv>
-        <FlexDiv $w='60vw' $small>
+        <FlexDiv>
           {workPageInfo.main}
           {workPageInfo.technologies}
           {workPageInfo.projects}

@@ -16,7 +16,8 @@ export const Home = () => {
   <GeneralButton onClick={() => setActiveItem(introduction[1])}>2</GeneralButton>
   <GeneralButton onClick={() => setActiveItem(introduction[2])}>3</GeneralButton>
   </FlexDiv >
-  <WorkCard item={activeItem}> </WorkCard>
+  <WorkCard item={activeItem}/> 
+ 
 </FlexDiv>
 </FullScreenDiv>
 </>

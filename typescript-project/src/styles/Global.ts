@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: large;
 }
 
 #root {
@@ -19,6 +20,7 @@ main{
   min-height: 76vh;
   
 }
+
 
 
 body {

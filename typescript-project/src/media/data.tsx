@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { StyledButton } from "../components";
+import { FlexDiv, StyledButton } from "../components";
 import { GeneralButton } from "../components/styles";
 
 export const imagesArray = [
@@ -39,10 +39,10 @@ export const workPageInfo = {
   <h2>My work</h2>
   <p>Hi. I am a full-stack developer, with proficiency mainly in the <em>MERN</em> stack but still learning
   new technologies. I have also worked in projects under the AGILE methodology, which provides a lead when
-  in a team. I am native in Spanish and have an almost native level in English, also being able to communicate
-  in French.</p>
+  in a team. You can click on the sections below to jump straight to the section you may need.</p>
   </>,
-  technologies: <>
+  technologies:
+  <FlexDiv $small $w='100%' $row $wrap='wrap'>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" />
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/800px-CSS.3.svg.png"/>
@@ -50,6 +50,6 @@ export const workPageInfo = {
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" />
   <img src="https://www.styled-components.com/atom.png" />
   <img src="https://coursera-university-assets.s3.amazonaws.com/05/353594a7964fdeaff4e10615de58c0/MongoDBSquareLogo.png" />
-  </>,
+  </FlexDiv>,
   projects: <><p>hii</p></>
 }
