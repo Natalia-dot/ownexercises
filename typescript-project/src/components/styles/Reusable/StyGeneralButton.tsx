@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { ButtonProps } from "../../../props/props";
 import { useNavigate } from "react-router-dom";
 
-const StyGeneralButton = styled.button<ButtonProps>`
-  width: 6rem;
+export const StyGeneralButton = styled.button<ButtonProps>`
+  min-width: 8rem;
+  padding: 1rem;
   height: 3rem;
   background: ${({theme}) => theme.colors.backgroundDark};
   transition: transform 0.2s, background 0.4s; 

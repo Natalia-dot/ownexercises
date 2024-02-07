@@ -13,7 +13,7 @@ const StyledFlexDiv = styled.div<FlexDivProps>`
     padding: 0 2rem;
     flex-wrap: ${(props) => props.$wrap && props.$wrap};
     img {
-        width: ${(props) => (props.$small ? '10vw' : props.$medium ? '25vw' : props.$w ? `${parseInt(props.$w) - 20}vw` : '90%')};
+        width: ${(props) => (props.$small ? '10vw' : props.$medium ? '25vw' : !props.$small && !props.$medium && props.$w ? `${parseInt(props.$w) - 20}vw` : '90%')};
         margin:  ${(props) => props.$row ? '1rem 2rem' : '1rem 0 2rem 0'};
         max-width: 100%; 
     }
@@ -29,6 +29,10 @@ const StyledFlexDiv = styled.div<FlexDivProps>`
     justify-content: center;
     width: 100%;
     margin: 0;
+    }
+
+    button{ 
+        margin: 1rem;
     }
 
 
