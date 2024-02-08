@@ -52,13 +52,15 @@ export const workPageInfo = {
   <img src="https://coursera-university-assets.s3.amazonaws.com/05/353594a7964fdeaff4e10615de58c0/MongoDBSquareLogo.png" />
 </>,
   projects:
-  <FlexDiv>
+//aqui en vez de fragments habia flexdiv pero no los reconoce
+  <>
   <h2>My projects</h2>
   <p>Welcome to my projects area. I recently finished a programming bootcamp, so the work is scarce, but by all 
     means suggest what you may. I am focusing on learning other technologies at the moment, so the work you find here
     may be incomplete. Nonetheless, have a look around!
   </p>
-  </FlexDiv>
+  </>
+  
   ,
   otherLanguages: <>
   <h2>I can speak:</h2>
