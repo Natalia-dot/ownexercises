@@ -70,3 +70,10 @@ export interface FlexDivProps
 > {
   
 }
+
+export interface ProjectCardProps extends React.DetailedHTMLProps<
+React.HTMLAttributes<HTMLDivElement>,
+HTMLDivElement
+> {
+
+}

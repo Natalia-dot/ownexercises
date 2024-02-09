@@ -21,6 +21,14 @@ main{
   
 }
 
+p,
+h1,
+h2,
+h3,
+h4{
+  color: ${({ theme }) => theme.colors.text};
+}
+
 
 
 body {
@@ -31,3 +39,4 @@ body {
   color: ${({ theme }) => theme.colors.text};
 
 }`
+

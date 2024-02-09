@@ -1,6 +1,6 @@
 import React from 'react';
 import { FullScreenDiv } from '../../components/styles/Main/FullScreenDiv';
-import { FlexDiv } from '../../components';
+import { FlexDiv, ProjectCard } from '../../components';
 import { workPageInfo } from '../../media/data';
 import { useNavigate } from 'react-router-dom';
 import ScrollToSectionButton from '../../components/ScrollButton';
@@ -13,7 +13,7 @@ export const WorkPage = () => {
           <FlexDiv $w='50vw'>
           {workPageInfo.main}
           </FlexDiv>
-          <FlexDiv $small $w='100%' $row $wrap='wrap' >
+          <FlexDiv $w='100%' $row $wrap='wrap' >
           <ScrollToSectionButton sectionId='technologies'> Technologies </ScrollToSectionButton> 
           <ScrollToSectionButton sectionId='projects'> Projects </ScrollToSectionButton> 
           <ScrollToSectionButton sectionId='languages'> Other Languages </ScrollToSectionButton> 
@@ -24,6 +24,9 @@ export const WorkPage = () => {
           </FlexDiv>
           <FlexDiv $small $w='100%' $row $wrap='wrap' id='projects'>
           {workPageInfo.projects}
+          <ProjectCard>
+            <p>holaaa</p>
+          </ProjectCard>
           </FlexDiv>          
           <FlexDiv $small $w='100%' $row $wrap='wrap' id='languages'>
           {workPageInfo.otherLanguages}

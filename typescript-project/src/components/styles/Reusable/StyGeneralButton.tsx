@@ -7,6 +7,13 @@ export const StyGeneralButton = styled.button<ButtonProps>`
   padding: 1rem;
   height: 3rem;
   background: ${({theme}) => theme.colors.backgroundDark};
+  color: ${({theme}) => theme.colors.text};
+  border: none;
+  border-left: 3px outset  ${({theme}) => theme.colors.text};
+  -webkit-box-shadow: 7px 10px 10px -5px rgba(0,0,0,0.5);
+-moz-box-shadow: 7px 10px 10px -5px rgba(0,0,0,0.5);
+box-shadow: 7px 10px 10px -5px rgba(0,0,0,0.5);
+
   transition: transform 0.2s, background 0.4s; 
 
   &:hover {

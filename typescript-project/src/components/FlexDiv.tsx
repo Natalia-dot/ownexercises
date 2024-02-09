@@ -9,17 +9,19 @@ const StyledFlexDiv = styled.div<FlexDivProps>`
     width: ${(props) => props.$w ? props.$w : '90vw'};
     height: ${(props) => props.$h && props.$h};
     background: ${({theme}) => theme.colors.secondaryBackground};
-    margin: 1rem;
-    padding: 0 2rem;
+    margin: 2rem;
+    padding: 0;
     flex-wrap: ${(props) => props.$wrap && props.$wrap};
     img {
-        width: ${(props) => (props.$small ? '10vw' : props.$medium ? '25vw' : !props.$small && !props.$medium && props.$w ? `${parseInt(props.$w) - 20}vw` : '90%')};
+        width: ${(props) => (props.$small ? '10%' : props.$medium ? '25vw' : !props.$small && !props.$medium && props.$w ? `${parseInt(props.$w) - 20}vw` : '90%')};
         margin:  ${(props) => props.$row ? '1rem 2rem' : '1rem 0 2rem 0'};
         max-width: 100%; 
+        height: 100%;
+        overflow: hidden;
     }
 
     p {
-    margin: 1rem 0;
+    margin: 1rem 2rem;
     }
 
     .centeredContainer {
