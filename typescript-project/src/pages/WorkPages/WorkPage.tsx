@@ -4,6 +4,7 @@ import { FlexDiv, ProjectCard } from '../../components';
 import { workPageInfo } from '../../media/data';
 import { useNavigate } from 'react-router-dom';
 import ScrollToSectionButton from '../../components/ScrollButton';
+import { title } from 'process';
 
 export const WorkPage = () => {
   return (
@@ -24,9 +25,7 @@ export const WorkPage = () => {
           </FlexDiv>
           <FlexDiv $small $w='100%' $row $wrap='wrap' id='projects'>
           {workPageInfo.projects}
-          <ProjectCard>
-            <p>holaaa</p>
-          </ProjectCard>
+          <ProjectCard title="" desc="" img="" alt="" />
           </FlexDiv>          
           <FlexDiv $small $w='100%' $row $wrap='wrap' id='languages'>
           {workPageInfo.otherLanguages}

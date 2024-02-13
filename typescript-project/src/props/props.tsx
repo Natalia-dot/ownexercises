@@ -62,6 +62,7 @@ export interface FlexDivProps
   export interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
   {
     $nav?: string;
+    $small?: boolean;
   }
 
   export interface WorkCardProps extends React.DetailedHTMLProps<
@@ -75,5 +76,8 @@ export interface ProjectCardProps extends React.DetailedHTMLProps<
 React.HTMLAttributes<HTMLDivElement>,
 HTMLDivElement
 > {
-
+  title: string;
+  desc: string;
+  img: string;
+  alt: string;
 }
