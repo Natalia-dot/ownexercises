@@ -12,7 +12,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
        * Scalability, let's go!! This is way too much lol*/}
       <p>{props.desc}</p>
       </div>
-      <GeneralButton $nav={`work/${props.title}`} $small>
+      <GeneralButton $nav={`/work/${props.title}`} $small>
         <span className="material-symbols-outlined">
 add
 </span>
