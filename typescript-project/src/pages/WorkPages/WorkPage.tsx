@@ -1,12 +1,13 @@
 import React from 'react';
 import { FullScreenDiv } from '../../components/styles/Main/FullScreenDiv';
 import { FlexDiv, ProjectCard } from '../../components';
-import { workPageInfo } from '../../media/data';
+import { projects, workPageInfo } from '../../media/data';
 import { useNavigate } from 'react-router-dom';
 import ScrollToSectionButton from '../../components/ScrollButton';
 import { title } from 'process';
 
 export const WorkPage = () => {
+  let projectList = Object.keys(projects)
   return (
     <>
       <FullScreenDiv>
@@ -25,7 +26,15 @@ export const WorkPage = () => {
           </FlexDiv>
           <FlexDiv $small $w='100%' $row $wrap='wrap' id='projects'>
           {workPageInfo.projects}
-          <ProjectCard title="" desc="" img="" alt="" />
+          {projectList.map((item) => (
+              <ProjectCard
+                key={item}
+                title={projects[item].title}
+                desc={projects[item].desc}
+                img={projects[item].img}
+                alt={projects[item].alt}
+              />
+            ))}
           </FlexDiv>          
           <FlexDiv $small $w='100%' $row $wrap='wrap' id='languages'>
           {workPageInfo.otherLanguages}
@@ -35,3 +44,4 @@ export const WorkPage = () => {
     </>
   );
 };
+

@@ -81,3 +81,12 @@ HTMLDivElement
   img: string;
   alt: string;
 }
+
+export type ProjectsType = {
+  [key: string]: {
+    title: string;
+    desc: string;
+    img: string;
+    alt: string;
+  };
+};
