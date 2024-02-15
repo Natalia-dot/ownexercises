@@ -1,5 +1,6 @@
 export * from './Home/Home'
 export * from './Interests/Interests'
 export * from './Media/Media'
+export * from './WorkPages/ProjectPage'
 export * from './WorkPages/WorkPage'
 export * from './NotFound/NotFound'

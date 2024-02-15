@@ -144,31 +144,31 @@ export const workPageInfo = {
 };
 
 export const projects:ProjectsType = {
-  project1: {
+  "Pokemon-Game-Hut": {
     title: "Pokemon-Game-Hut",
     desc: "A Javascript game hut with three games and a Pokedex as well as theme change and a simple user.",
     img: "",
     alt: "Pokemon Game Hut Image",
   },
-  project2: {
+  "Node-Backend": {
     title: "Node-Backend",
     desc: "Using MongoDB we built a backend to build and update a database.",
     img: "",
     alt: "Backend controllers code",
   },
-  project3: {
+  "Arctic-Monkeys-Frontend": {
     title: "Arctic-Monkeys-Frontend",
     desc: "A REACT Arctic Monkeys compendium, with the ability to complete user integration, profle editing, and favorite marking.",
     img: "",
     alt: "A photo of the REACT frontend",
   },
-  project4: {
+  'Group-React-Project': {
     title: "Group-React-Project",
     desc: "An extensive sports compendium with possibilities to make your own football team, star other people's, and comment on them!",
     img: "",
     alt: "An image of the project",
   },
-  project5: {
+  "Final-BootCamp-Project": {
     title: "Final-BootCamp-Project",
     desc: "A social network to post accomodation or look for roommates, with rating systems, user verification, comments, personalized search and messaging. ",
     img: "",
