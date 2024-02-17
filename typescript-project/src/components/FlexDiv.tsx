@@ -24,6 +24,13 @@ const StyledFlexDiv = styled.div<FlexDivProps>`
     margin: 1rem 2rem;
     }
 
+    .weirdImage {
+       img{
+        margin: 0;        
+       }
+
+    }
+
     .centeredContainer {
     display: flex;
     flex-direction: column;

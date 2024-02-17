@@ -15,7 +15,7 @@ export const ProjectPage:React.FC = () => {
     <>
     {data && (
     <>
-    <p>{data?.title}</p>
+    <p>{data?.title.replaceAll('-', ' ')}</p>
     <p>{data?.desc}</p>
     <img src={data?.img} alt={data.alt}/>
     </>
