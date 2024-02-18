@@ -12,9 +12,9 @@ export const Home = () => {
 <FullScreenDiv>
 <FlexDiv $row $justify='space-around' $h='65vh'>
   <FlexDiv $w='20vw' $h='60vh'>
-  <GeneralButton onClick={() => setActiveItem(introduction[0])}>1</GeneralButton>
-  <GeneralButton onClick={() => setActiveItem(introduction[1])}>2</GeneralButton>
-  <GeneralButton onClick={() => setActiveItem(introduction[2])}>3</GeneralButton>
+  <GeneralButton onClick={() => setActiveItem(introduction[0])}>Who am I?</GeneralButton>
+  <GeneralButton onClick={() => setActiveItem(introduction[1])}>What I do</GeneralButton>
+  <GeneralButton onClick={() => setActiveItem(introduction[2])}>My background</GeneralButton>
   </FlexDiv >
   <WorkCard item={activeItem}/> 
  

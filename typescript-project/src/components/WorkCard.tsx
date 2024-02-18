@@ -12,7 +12,7 @@ export const WorkCard = (prop:any) => {
   {item.text}
   {item.extra && <div className='centeredContainer'>{item.extra}</div>}
   </div>
-  <div className='weirdImage' style={{'width':'60%', 'margin':'10px' }}>
+  <div className='weirdImage' >
   {item.img}
   </div>
   </FlexDiv>
