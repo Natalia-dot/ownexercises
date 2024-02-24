@@ -62,6 +62,16 @@ margin: 1rem 3rem 1rem 0;
   h2 {
     margin: 1.5rem 0 0 0;
   }
+
+
+  .interestCardImage{
+    width:300px;
+    height: 300px;
+
+    & img{
+      object-fit: contain;
+    }
+  }
 `;
 
 export const FlexDiv = (props: FlexDivProps) => {
